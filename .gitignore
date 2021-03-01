@@ -1,0 +1,4 @@
+#notes file
+notes.txt
+#this disable all txt files
+*.txt

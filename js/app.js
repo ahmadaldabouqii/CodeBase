@@ -6,6 +6,7 @@ alert('Hey! ,Welcome to My website');
 let userName = prompt('What\'s your name?', 'Enter your name Here..');
 alert('Welcome to my website ' + userName);
 
+// console.log('Welcome to my website ' + userName);
 
 let g = prompt('how was lecture today ? ', 'choose:[confused me a bit /good so far /rather complicated /was useful/]').toLowerCase();
 
@@ -103,3 +104,5 @@ guess5(mynum, numcorrect);
 let element = document.getElementById('n-html');
 element.innerText = 'Hey! MR. ' + userName + ", My Name Is Ahmad AlDabouqi";
 alert('Your Score is: ' + pointer + '/5');
+
+// console.log(pointer);

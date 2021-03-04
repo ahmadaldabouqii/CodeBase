@@ -23,65 +23,93 @@ alert('Welcome To My Website ' + userName + '!');
 
 // ======================================================================================================================================================================
 
-let answer = prompt('If I were you, would you expect me to want to play a guessing game with you ' + userName + ' ?', '(Yes-y)/(No-n)').toLowerCase();
 
-if (answer === 'yes' || answer === 'y') {
-    alert('Yeah ' + userName + ' of course i want that, why not!');
+
+function question() {
+  let answer = prompt('If I were you, would you expect me to want to play a guessing game with you ' + userName + ' ?', '(Yes-y)/(No-n)').toLowerCase();
+    if (answer === 'yes' || answer === 'y') {
+        alert('Yeah ' + userName + ' of course i want that, why not!');
+    }
+    else if (answer === 'no' || answer === 'n') {
+        alert('Ooh! Why ' + userName + ' ? Actually i want in fact *_*, let\'s beginning!');
+    }
+    else {
+        alert('Try Again! MR. ' + userName);
+    }    
+
 }
-else if (answer === 'no' || answer === 'n') {
-    alert('Ooh! Why ' + userName + ' ? Actually i want in fact *_*, let\'s beginning!');
-}
-else {
-    alert('Try Again! MR. ' + userName);
-}
+
+question(); 
+
 
 // ======================================================================================================================================================================
 
-let lecture = prompt('How Was Lecture Today ' + userName + ' ?', 'choose:[confused me a bit /good so far /rather complicated /was useful/]').toLowerCase();
+function how_lecture() {
 
-while (lecture === 'good so far' || lecture === 'was useful') {
-    alert('That\'s Cool ' + userName + '..');
-    pointer++;
-    break;
+    let lecture = prompt('How Was Lecture Today ' + userName + ' ?', 'choose:[confused me a bit /good so far /rather complicated /was useful/]').toLowerCase();
+
+    while (lecture === 'good so far' || lecture === 'was useful') {
+        alert('That\'s Cool ' + userName + '..');
+        pointer++;
+        break;
+    }
+    while (lecture === 'confused me a bit' || lecture === 'rather complicated') {
+        alert('Don\'t Worry!, just You need just repeat watch recording lecture one more and i think you will be good inshaallah!');
+        break;
+    }
+    
 }
-while (lecture === 'confused me a bit' || lecture === 'rather complicated') {
-    alert('Don\'t Worry!, just You need just repeat watch recording lecture one more and i think you will be good inshaallah!');
-    break;
-}
+
+how_lecture();
 
 // console.log('1:  ' + pointer);
 
 // ======================================================================================================================================================================
 
-let math = prompt('Guess, do you think I hate Mathmatic MR. ' + userName + ' ?', '(Yes-y)/(No-n)').toLowerCase();
-switch (true) {
-    case (math === 'yes' || math === 'y'):
-        alert('OH YEAH! Really i hate Math');
-        pointer++;
-        break;
-    case (math === 'no' || math === 'n'):
-        alert('You are wrong , i don\'t like math ever never Ya ' + userName + '!');
-        break;
-    default: alert('wrong input! MR. ' + userName);
+function love_math() {
+    let math = prompt('Guess, do you think I hate Mathmatic MR. ' + userName + ' ?', '(Yes-y)/(No-n)').toLowerCase();
+    switch (true) {
+        case (math === 'yes' || math === 'y'):
+            alert('OH YEAH! Really i hate Math');
+            pointer++;
+            break;
+        case (math === 'no' || math === 'n'):
+            alert('You are wrong , i don\'t like math ever never Ya ' + userName + '!');
+            break;
+        default: alert('wrong input! MR. ' + userName);
+    }
+
 }
+
+love_math(); 
+
 
 // console.log('2:  ' + pointer);
 
 // ======================================================================================================================================================================
 
-let userSm = prompt('Do you think i like social media?', '(Yes-y)/(No-n)').toLowerCase();
-if (userSm === 'yes' || userSm === 'y') {
-    alert('yes, I like it ' + userName + '.');
-    pointer++;
+function socialji(){
+
+    let userSm = prompt('Do you think i like social media?', '(Yes-y)/(No-n)').toLowerCase();
+    if (userSm === 'yes' || userSm === 'y') {
+        alert('yes, I like it ' + userName + '.');
+        pointer++;
+    }
+    else if (userSm === 'no' || userSm === 'n') {
+        alert('Oo!, Uncoreect ' + userName + '!');
+    }
+    else alert('What are u talking About ' + userName + '!');
+    
 }
-else if (userSm === 'no' || userSm === 'n') {
-    alert('Oo!, Uncoreect ' + userName + '!');
-}
-else alert('What are u talking About ' + userName + '!');
+
+socialji();
+
 
 // console.log('3:  ' + pointer);
+// ======================================================================================================================================================================
 
-let dream = prompt('Can you guess what country I dream to live in ' + userName + ' ?', 'choose:[USA /USE /Canada/]').toLowerCase();
+function counDream() {
+    let dream = prompt('Can you guess what country I dream to live in ' + userName + ' ?', 'choose:[USA /USE /Canada/]').toLowerCase();
 
 while (dream === 'USA' || dream == 'usa') {
     alert('That\'s Correct ' + userName + '.. Really this is my dream!');
@@ -93,18 +121,28 @@ while (dream === 'UAE' || dream === 'uae' || dream === 'Canada' || dream === 'ca
     break;
 }
 
+}
+
+counDream(); 
+
+
 // console.log('4:  ' + pointer);
 
 // ======================================================================================================================================================================
 
-let favTeam = prompt('Do you think i like FCBarcelona Team *_*?', '(Yes-y)/(No-n)').toLowerCase();
-if (favTeam === 'yes' || favTeam === 'y') {
-    alert('yes, I am a fan of the Barcelona team, and I am fanatic about it ' + userName + '.');
-    pointer++;
+function team() {
+    let favTeam = prompt('Do you think i like FCBarcelona Team *_*?', '(Yes-y)/(No-n)').toLowerCase();
+    if (favTeam === 'yes' || favTeam === 'y') {
+        alert('yes, I am a fan of the Barcelona team, and I am fanatic about it ' + userName + '.');
+        pointer++;
+    }
+    else if (favTeam === 'no' || favTeam === 'n') {
+        alert('Oo!, Uncoreect ' + userName + ', Barcelona is My Fav Team!');
+    }
 }
-else if (favTeam === 'no' || favTeam === 'n') {
-    alert('Oo!, Uncoreect ' + userName + ', Barcelona is My Fav Team!');
-}
+
+team();
+
 
 // console.log('5:  ' + pointer);
 
@@ -114,25 +152,30 @@ let statusOfnum = false;
 let CorrectAnswer = 5;
 let userAvg;
 // let convert = holder.values.toString();
-for (let z = 0; z <= 3; z++) {
-    // userAvg = Number(prompt('guess the number in my mind From 1-10', holder));
-    userAvg = prompt('guess the number in my mind From 1-10');
-    if (isNaN(userAvg)) {
-        alert('Please enter a valid number');
-    }
-    else if (userAvg == CorrectAnswer) { //else if (userAvg === holder[4])
-        alert('Correct Answer, Great Job ' + userName + '!');
-        pointer++;
-        statusOfnum = true;
-        break;
-    }
-    else if (userAvg > CorrectAnswer) {
-        alert('too high! Try again');
-    }
-    else if (userAvg < CorrectAnswer) {
-        alert('too low! Try again');
+function yourAvg(){
+    for (let z = 0; z <= 3; z++) {
+        // userAvg = Number(prompt('guess the number in my mind From 1-10', holder));
+        userAvg = prompt('guess the number in my mind From 1-10');
+        if (isNaN(userAvg)) {
+            alert('Please enter a valid number');
+        }
+        else if (userAvg == CorrectAnswer) { //else if (userAvg === holder[4])
+            alert('Correct Answer, Great Job ' + userName + '!');
+            pointer++;
+            statusOfnum = true;
+            break;
+        }
+        else if (userAvg > CorrectAnswer) {
+            alert('too high! Try again');
+        }
+        else if (userAvg < CorrectAnswer) {
+            alert('too low! Try again');
+        }
     }
 }
+
+yourAvg(); 
+
 
 if (!statusOfnum) {
     alert('The Correct Answer is: ' + CorrectAnswer + 'Good luck later On ' + userName + '!');
@@ -141,10 +184,13 @@ if (!statusOfnum) {
 // console.log('6:  ' + pointer);
 
 // ======================================================================================================================================================================
+let C_answer = false;
+
+function feedback(){
 
 let review = ['Yes', 'y', 'No', 'n', 'yes', 'no'];
 let userReview = prompt('Are my questions complex and boring and so on? ', review).toLowerCase();
-let C_answer = false;
+
 for (let i = 0; i <= 5; i++) {
     while (isNaN(userReview) === false) {
         alert('Please enter a valid answer!');
@@ -160,6 +206,9 @@ for (let i = 0; i <= 5; i++) {
         break;
     }
 }
+}
+feedback(); 
+
 if (!C_answer) {
     alert('I think Ya ' + userName + ' My Questions is not boring :D');
 }
@@ -170,3 +219,5 @@ if (!C_answer) {
 alert('Your Score In This Game is: ' + pointer + '/7');
 let element = document.getElementById('n-html');
 element.innerText = 'Hey! MR. ' + userName + ', My Name Is Ahmad AlDabouqi';
+
+// ======================================================================================================================================================================

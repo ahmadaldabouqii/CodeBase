@@ -10,7 +10,6 @@ img{
     /* width: fit-content;
     height: 400px;
     
-    
     vertical-align: center; */
     margin-top: 10px;
     border-radius: 5px;
@@ -28,7 +27,7 @@ p{
 }
 
 body{
-    background:blueviolet;
+    background:#50696d;
     background-size:cover;
 }
 

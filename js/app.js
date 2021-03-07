@@ -19,10 +19,6 @@ PromptStudentName();
 
 alert('Welcome To My Website ' + userName + '!');
 
-// console.log('Welcome to my website ' + userName + '!');
-
-// ======================================================================================================================================================================
-
 let answer = prompt('If I were you, would you expect me to want to play a guessing game with you ' + userName + ' ?', '(Yes-y)/(No-n)').toLowerCase();
 
 if (answer === 'yes' || answer === 'y') {
@@ -35,7 +31,6 @@ else {
     alert('Try Again! MR. ' + userName);
 }
 
-// ======================================================================================================================================================================
 
 let lecture = prompt('How Was Lecture Today ' + userName + ' ?', 'choose:[confused me a bit /good so far /rather complicated /was useful/]').toLowerCase();
 
@@ -49,9 +44,6 @@ while (lecture === 'confused me a bit' || lecture === 'rather complicated') {
     break;
 }
 
-// console.log('1:  ' + pointer);
-
-// ======================================================================================================================================================================
 
 let math = prompt('Guess, do you think I hate Mathmatic MR. ' + userName + ' ?', '(Yes-y)/(No-n)').toLowerCase();
 switch (true) {
@@ -65,9 +57,6 @@ switch (true) {
     default: alert('wrong input! MR. ' + userName);
 }
 
-// console.log('2:  ' + pointer);
-
-// ======================================================================================================================================================================
 
 let userSm = prompt('Do you think i like social media?', '(Yes-y)/(No-n)').toLowerCase();
 if (userSm === 'yes' || userSm === 'y') {
@@ -78,8 +67,6 @@ else if (userSm === 'no' || userSm === 'n') {
     alert('Oo!, Uncoreect ' + userName + '!');
 }
 else alert('What are u talking About ' + userName + '!');
-
-// console.log('3:  ' + pointer);
 
 let dream = prompt('Can you guess what country I dream to live in ' + userName + ' ?', 'choose:[USA /USE /Canada/]').toLowerCase();
 
@@ -93,9 +80,6 @@ while (dream === 'UAE' || dream === 'uae' || dream === 'Canada' || dream === 'ca
     break;
 }
 
-// console.log('4:  ' + pointer);
-
-// ======================================================================================================================================================================
 
 let favTeam = prompt('Do you think i like FCBarcelona Team *_*?', '(Yes-y)/(No-n)').toLowerCase();
 if (favTeam === 'yes' || favTeam === 'y') {
@@ -106,9 +90,6 @@ else if (favTeam === 'no' || favTeam === 'n') {
     alert('Oo!, Uncoreect ' + userName + ', Barcelona is My Fav Team!');
 }
 
-// console.log('5:  ' + pointer);
-
-// ======================================================================================================================================================================
 
 let statusOfnum = false;
 let CorrectAnswer = 5;
@@ -138,9 +119,6 @@ if (!statusOfnum) {
     alert('The Correct Answer is: ' + CorrectAnswer + 'Good luck later On ' + userName + '!');
 }
 
-// console.log('6:  ' + pointer);
-
-// ======================================================================================================================================================================
 
 let review = ['Yes', 'y', 'No', 'n', 'yes', 'no'];
 let userReview = prompt('Are my questions complex and boring and so on? ', review).toLowerCase();
@@ -163,9 +141,7 @@ for (let i = 0; i <= 5; i++) {
 if (!C_answer) {
     alert('I think Ya ' + userName + ' My Questions is not boring :D');
 }
-// console.log('7:  ' + pointer);
 
-// ======================================================================================================================================================================
 
 alert('Your Score In This Game is: ' + pointer + '/7');
 let element = document.getElementById('n-html');
